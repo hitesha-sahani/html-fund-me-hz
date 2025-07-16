@@ -32,8 +32,8 @@ If you can't or don't want to run and install locally, you can work with this re
 1. Clone the repo
 
 ```
-git clone https://github.com/Cyfrin/html-fund-me-cu
-cd html-fund-me-cu
+git clone https://github.com/hitesha-sahani/html-fund-me-hz
+cd html-fund-me-hz
 ```
 
 2. Run the `index.html` file
@@ -41,8 +41,6 @@ cd html-fund-me-cu
 You can usually just double click the file to "run it in the browser". Or you can right click the file in your VSCode and run "open with live server" if you have the live server VSCode extension (ritwickdey.LiveServer).
 
 And you should see a small button that says "connect".
-
-![Connect](connect.png)
 
 Hit it, and you should see metamask pop up.
 
@@ -55,15 +53,14 @@ If you want to execute a transaction follow this, you'll need to setup a chain. 
 1. You'll need to open up a second terminal and run:
 
 ```
-git clone https://github.com/Cyfrin/foundry-fund-me-cu
-cd foundry-fund-me-cu
-make build
-make anvil
+git clone https://github.com/hitesha-sahani/foundry-fund-me-hz
+cd foundry-fund-me-hz
+anvil
 ```
 
 Then, in a second terminal
 ```
-make deploy
+make deploy-anvil
 ```
 
 > Moccasin
@@ -156,12 +153,3 @@ Additionally, add your zkSync node with chainid `260` to your metamask.
 3. Refresh the front end, input an amount in the text box, and hit `fund` button after connecting
 
 # Thank you!
-
-If you appreciated this, feel free to follow me or donate!
-
-ETH/Arbitrum/Optimism/Polygon/etc Address: 0x9680201d9c93d65a3603d2088d125e955c73BD65
-
-[![Patrick Collins Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/PatrickAlphaC)
-[![Patrick Collins YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCn-3f8tw_E1jZvhuHatROwA)
-[![Patrick Collins Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patrickalphac/)
-[![Patrick Collins Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@patrick.collins_58673/)
