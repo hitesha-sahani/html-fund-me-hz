@@ -1,19 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Fund Me App</title>
+    <meta charset="UTF-8" />
+    <title>Fund Me DApp</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+        font-family: 'Segoe UI', sans-serif;
+        color: #e0f7fa;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('https://i.pinimg.com/1200x/eb/96/28/eb96283023cb63170c64c78b9306fd26.jpg');
+      }
+
+      .container {
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        padding: 40px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        width: 90%;
+        max-width: 500px;
+      }
+
+      .eth-logo {
+        width: 60px;
+        margin-bottom: 10px;
+        animation: glow 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes glow {
+        0% {
+          filter: drop-shadow(0 0 4px #00fff7);
+        }
+        100% {
+          filter: drop-shadow(0 0 12px #00fff7);
+        }
+      }
+
+      h1 {
+        margin-bottom: 10px;
+        font-size: 26px;
+        color: #ffffff;
+      }
+
+      p.tagline {
+        margin-top: 0;
+        font-size: 14px;
+        color: #b0bec5;
+        font-style: italic;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin: 10px 8px;
+        border: none;
+        border-radius: 6px;
+        background: #03dac5;
+        color: #0f2027;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background: #00bfa5;
+      }
+
+      input {
+        padding: 8px 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #555;
+        background: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+        width: 150px;
+        font-size: 14px;
+      }
+
+      label {
+        font-size: 14px;
+        margin-right: 6px;
+        color: #cfd8dc;
+      }
+    </style>
   </head>
 
   <body>
-    <button id="connectButton">Connect</button>
-    <button id="balanceButton">getBalance</button>
-    <button id="withdrawButton">Withdraw</button>
-    <!-- <form> -->
-    <label for="ethAmount">ETH Amount</label>
-    <input id="ethAmount" placeholder="0.1" />
-    <button type="button" id="fundButton" > Fund </button>
-    <!-- </form> -->
-  </body>
+    <div class="container">
+      <img
+        class="eth-logo"
+        src="https://i.pinimg.com/1200x/65/fa/18/65fa186f93657333a2300cfd99086e57.jpg"
+        alt="Ethereum Logo"
+      />
+      <h1>💫 Fund Me DApp</h1>
+      <p class="tagline">Fuel the future, one transaction at a time ✨</p>
 
-  <script src="./index.js" type="module"></script>
+      <div>
+        <button id="connectButton">Connect</button>
+        <button id="balanceButton">Get Balance</button>
+        <button id="withdrawButton">Withdraw</button>
+      </div>
+
+      <div>
+        <label for="ethAmount">ETH Amount</label>
+        <input id="ethAmount" placeholder="0.1" />
+        <button type="button" id="fundButton">Fund</button>
+      </div>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
 </html>
